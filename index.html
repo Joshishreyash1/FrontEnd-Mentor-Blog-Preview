@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <img class="banner" src="./assets//images/illustration-article.svg" alt="" width="200px">
+      <button class="btn">Learning</button>
+      <p>Published 21 Dec 2023</p>
+      <h1>HTML & CSS foundation</h1>
+      <p>these languages are the backbone of any website,defining structure, content, and presentation.</p>
+    <div class="footer">
+      <img class="avatar" src="./assets/images/image-avatar.webp" alt="avatar">
+      <h2>Greg Hooper</h2>
+    </div>
+    </div>
+  </div>
+  <style>
+    body {
+      background: #F6D050;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+      font-family: 'Figtree', sans-serif;
+      font-weight: 400;
+    }
+
+    .container {
+      width: 300px;
+      height: 400px;
+      background: #FFF;
+      border-radius: 20px;
+      margin: 20px;
+      padding: 25px;
+      border: 2px solid black;
+      box-shadow: 10px 10px 5px hsl(0, 0%, 7%);
+    }
+
+    .banner{
+      border-radius: 20px;
+      width: 100%;
+      height: 200px;
+    }
+
+    .btn {
+      background: hsl(47, 88%, 63%);
+      height: 30px;
+      width: 80px;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    h1{
+      font-size: 20px;
+    }
+   .footer{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    margin-top: -8px;
+   }
+   .footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+   }
+   .footer h2{
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: hsl(0, 0%, 7%);
+   }
+   p{
+    font-size: 14px;
+    color: hsl(0, 0%, 42%);
+   }
+   @media (max-width:400px){
+    .container{
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+      border-radius: 15px;
+      margin: 10px;
+    }
+    h1{
+      font-size:10px
+    }
+    .footer img{
+      width:20px;
+      height:20px;
+      border-radius:50%;
+    }
+    .footer h2{
+      font-size: 0.5rem;
+    }
+    p{
+      font-size:10px
+    }
+   }
+  </style>
+</body>
+
+</html>
